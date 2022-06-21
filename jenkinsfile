@@ -73,7 +73,7 @@ pipeline
              
              
              
-             sh 'docker push parthac1/artifacts:tagname'
+             sh 'docker push parthac1/artifacts:v1'
         }
 
       }
