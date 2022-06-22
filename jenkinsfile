@@ -12,7 +12,7 @@ pipeline
       {
         steps 
         {
-            git 'https://github.com/parthac1/dockeransiblejenkins.git'
+            git 'https://github.com/parthac1/jenksinspipelinerep.git'
         }
 
       } 
