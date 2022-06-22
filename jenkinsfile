@@ -12,7 +12,7 @@ pipeline
       {
         steps 
         {
-            git 'https://github.com/parthac1/jenksinspipelinerep.git'
+           git branch: 'main', url: 'https://github.com/parthac1/jenksinspipelinerep.git'
         }
 
       } 
