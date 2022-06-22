@@ -81,7 +81,11 @@ pipeline
       {
         steps 
         {
+<<<<<<< HEAD
          ansiblePlaybook credentialsId: 'dev-server', disableHostKeyChecking: true, installation: 'Ansible', inventory: 'dev.inv', playbook: 'install_docker.yaml' 
+=======
+          ansiblePlaybook disableHostKeyChecking: true, installation: 'Ansible', inventory: 'dev.inv', playbook: 'install_docker.yaml'  
+>>>>>>> 08d09006ae857a729472fbc9f8f574310bddb438
         }
 
       }
