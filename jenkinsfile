@@ -81,7 +81,7 @@ pipeline
       {
         steps 
         {
-          ansiblePlaybook disableHostKeyChecking: true, installation: 'Ansible', inventory: 'dev.inv', playbook: ' install_docker.yaml'  
+          ansiblePlaybook disableHostKeyChecking: true, installation: 'Ansible', inventory: 'dev.inv', playbook: 'install_docker.yaml'  
         }
 
       }
