@@ -1,0 +1,33 @@
+- name:  this is to install docker and run docker on servers 
+  hosts: dev
+  become: true 
+   
+   
+  tasks:
+     - name: this task is to install  python
+       yum:
+          name: python-pip
+          state: present 
+     - name: this task is to install docker 
+       yum:
+          name: docker
+          state: present
+     - name:  this task is to start the docker service
+       service:
+                name: docker
+                state: started
+                enabled: yes
+     - name:  this task is to start the docker service
+       pip:
+           name: docker-py
+           state: present 
+     - name:  this task is to  run the docker in the target system
+       docker_container:
+               name: myapp
+               image: parthac1/artifacts:v1
+               state: present 
+               published_ports:
+                    - 0.0.0.0:8080:8080
+                            
+
+
